@@ -1,5 +1,7 @@
 # AOSP on NVIDIA Jetson Nano
 
+Copyright (c) 2020-2021 [Antmicro](https://www.antmicro.com)
+
 ![Antmicro Jetson Nano Baseboard running AOSP](jetson_nano_aosp.jpg)
 
 This README contains build instructions for creating an AOSP image intended to be run on the Nvidia Jetson Nano platform.
