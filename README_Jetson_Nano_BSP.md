@@ -51,7 +51,22 @@ sudo cp arch/arm64/boot/dts/tegra210-p3448-0002-p3449-0000-b00.dtb /path/to/Linu
 
 6. Flash the target device
 
-Put the Antmicro Jetson Nano Baseboard in recovery mode (to do it press the RST button while holding REC button), and flash the device with following commands:
+Put the Jetson Nano in recovery mode:
+- If you have flashed your Jetson Nano module with another Ubuntu image, run this command: 
+```
+sudo reboot --force forced-recovery
+```
+- If you haven't flashed any image, do these steps:
+```
+1. Jumper the J48 power select pin first and plug the power jack
+2. Jumper the recovery pin
+3. Jumper the reset pin
+4. Remove the jumper of reset pin
+5. Remove the jumper of recovery pin.
+```
+- If you have Antmicro Jetson Nano Baseboard, press the RST button while holding REC button)
+
+Flash the device with following commands:
 
 ```
 cd /path/to/Linux_for_Tegra
